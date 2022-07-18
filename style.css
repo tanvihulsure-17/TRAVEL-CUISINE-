@@ -1,0 +1,290 @@
+.preloader {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-top-color: transparent;
+    animation: rotatecircle 1s linear infinite;
+    
+}
+
+@keyframes rotatecircle {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+    
+
+}
+@keyframes textAnim{
+    from{
+        opacity:0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes moveline{
+    from{
+        transform: rotate(30deg) scale(0.2);
+        opacity: 0;
+        
+    }
+    to{
+        transform: rotate(1000deg) scale(1.2);
+        opacity: 1;
+    }
+}
+
+.letter{
+    position: absolute;
+    top: 65%;
+    left: 42%;
+    display: flex;
+    margin-right: 20rem;
+}
+.let{
+    padding-left: 20px;
+}
+
+.L{
+    animation: textAnim 0.8s ease infinite alternate;
+    animation-delay: 0.05s;
+    color: white;
+}
+.O{
+    animation: textAnim 0.8s ease infinite alternate;
+    animation-delay: 0.1s;
+    color: white;
+}
+.A{
+    animation: textAnim 0.8s ease infinite alternate;
+    animation-delay: 0.2s;
+    color: white;
+}
+.D{
+    animation: textAnim 0.8s ease infinite alternate;
+    animation-delay: 0.3s;
+    color: white;
+}
+.I{
+    animation: textAnim 0.8s ease infinite alternate;
+    animation-delay: 0.4s;
+    color: white;
+}
+.N{
+    animation: textAnim 0.8s ease infinite alternate;
+    animation-delay: 0.5s;
+    color: white;
+}
+.G{
+    animation: textAnim 0.8s ease infinite alternate;
+    animation-delay: 0.6s;
+    color: white;
+}
+
+.line{
+    width: 20%;
+    height: 2px;
+    background: white;
+     animation: moveline 2s ease infinite alternate; 
+     position: absolute;
+    top: 50%;
+    left: 42%;
+}
+
+.image{
+    background: url(https://imageio.forbes.com/specials-images/dam/imageserve/1171238184/0x0.jpg?format=jpg&width=1200);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    float: right;
+}
+.heading{
+    font-size: 30px;
+    float: left;
+    font-family: "Mingzat";
+}
+
+.nav{
+    width: 100%;
+    height: 10vh
+}
+
+a{
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: "Libre Baskerville";
+    font-size: 20px;
+}
+
+.button{
+    padding: 30px 30px;
+    margin-left: 46%;
+
+    
+    
+    
+}
+    .heading2{
+        text-align: center;
+        color: white;
+        margin-top: 20%;
+        font-size: 10px;
+    }
+    
+    .heading3{
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+
+    button{
+        padding: 25px 25px;
+        background: none;
+        color: white;
+        border: 2px solid white;
+    }
+
+    button:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    .second-section{
+        width: 100%;
+        height: 100vh;
+        background: rgb(20, 20, 20);
+        padding-top: 2px;
+        padding-bottom: 100px;
+    }
+
+    .image-collection{
+        width: 100%;
+        height: 62vh;
+        display: flex;
+        justify-content: space-evenly;
+        
+
+
+    }
+
+    .image-collection img{
+        height: 450px;
+        width: 350px;
+    }
+
+    .social-media{
+        width: 100%;
+        height: 20vh;
+        
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+
+    }
+
+    .social-media img{
+        width: 3%;
+        height: 5vh;
+        cursor: pointer;
+        
+    }
+
+    .second-section h1{
+        text-align: center;
+        color: white;
+    }
+
+    .image-collection:hover{
+        opacity: 1.0;
+filter: grayscale(75%);
+    }
+
+    .one, .two, .three, .four, .five, .six{
+        width: 10%;
+        position: absolute;
+    }
+
+    .one{
+        left: 20%;
+        top:70%;
+        animation: clouds 3s linear infinite;
+    }
+
+    .two{
+left: 80%;
+top: 78%;
+animation: clouds 4s linear infinite;
+    }
+
+    .three{
+        left: 40%;
+        top: 50%;
+        animation: clouds 5s linear infinite;
+    }
+
+    .four{
+        left: 60%;
+        top: 58%;
+        animation: clouds 6s linear infinite;
+    }
+
+    .five{
+        left: 10%;
+        top: 30%;
+        animation:clouds 7s linear infinite ;
+    }
+
+    .six{
+        left: 80%;
+        top: 38%;
+        animation: clouds 8s linear infinite;
+    }
+
+    @keyframes clouds{
+        from{
+            transform: translateY(200px);
+            opacity: 1;
+        }
+
+        to{
+            transform: translateY(-600px);
+            opacity: 0;
+        }
+    }
+   
